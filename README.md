@@ -125,7 +125,7 @@ Funciona ejecutando máquinas virtuales que pueden correr distintos sistemas, co
   - Simulación de arquitecturas diferentes (x86, ARM, RISC-V, etc.).
 
 ---
-![Actualizacion](Tarea_5/fotos/Pantallazo.png)
+![Actualizacion](./fotos/Pantallazo.png)
 
 ## ⚙️ Instalación de QEMU en Linux
 
