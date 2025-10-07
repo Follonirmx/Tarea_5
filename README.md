@@ -124,27 +124,25 @@ Funciona ejecutando máquinas virtuales que pueden correr distintos sistemas, co
   - Pruebas de software sin alterar el sistema principal.  
   - Simulación de arquitecturas diferentes (x86, ARM, RISC-V, etc.).
 
+
 ---
 ## ⚙️ Instalación de QEMU en Linux
 
 ### 🔹 Paso 1: Actualizar el sistema
 Antes de instalar, es importante tener el sistema actualizado:
-```bash
-sudo apt update && sudo apt upgrade -y
+-sudo apt update && sudo apt upgrade -y
+![Pantallazo 1](./fotos/pantallazo1.png)
+### 🔹 Paso 2: Instalar QEMU y herramientas relacionadas
+-sudo apt install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
+### 🔹 Paso 3: Verificar instalación
+-qemu-system-x86_64 --version
+![Pantallazo 2](./fotos/pantallazo2.png)
+### 🔹 Paso 4: Crear una imagen de disco virtual
+-qemu-img create -f qcow2 mi_disco.qcow2 10G
+![Pantallazo 3](./fotos/pantallazo3.png)
+### 🔹 Paso 5: Iniciar la máquina virtual
+-qemu-system-x86_64 -hda mi_disco.qcow2 -cdrom debian.iso -boot d -m 2048
+![Pantallazo 4](./fotos/pantallazo4.png)
 
 
-
-
-sudo apt install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
-
-
-qemu-system-x86_64 --version
-
-qemu-img create -f qcow2 mi_disco.qcow2 10G
-
-
-qemu-system-x86_64 -hda mi_disco.qcow2 -cdrom debian.iso -boot d -m 2048
-
----
-![Actualizacion](./fotos/Pantallazo.png)
 
