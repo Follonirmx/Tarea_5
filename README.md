@@ -125,14 +125,14 @@ Funciona ejecutando máquinas virtuales que pueden correr distintos sistemas, co
   - Simulación de arquitecturas diferentes (x86, ARM, RISC-V, etc.).
 
 ---
-![Actualizacion](./fotos/Pantallazo.png)
-
 ## ⚙️ Instalación de QEMU en Linux
 
 ### 🔹 Paso 1: Actualizar el sistema
 Antes de instalar, es importante tener el sistema actualizado:
 ```bash
 sudo apt update && sudo apt upgrade -y
+
+![Actualizacion](./fotos/Pantallazo.png)
 
 
 sudo apt install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
