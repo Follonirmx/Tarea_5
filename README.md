@@ -132,7 +132,7 @@ Antes de instalar, es importante tener el sistema actualizado:
 ```bash
 sudo apt update && sudo apt upgrade -y
 
-![Actualizacion](./fotos/Pantallazo.png)
+
 
 
 sudo apt install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
@@ -145,5 +145,6 @@ qemu-img create -f qcow2 mi_disco.qcow2 10G
 
 qemu-system-x86_64 -hda mi_disco.qcow2 -cdrom debian.iso -boot d -m 2048
 
-
+---
+![Actualizacion](./fotos/Pantallazo.png)
 
