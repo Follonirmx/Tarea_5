@@ -110,5 +110,40 @@ A continuación se presenta la información correspondiente a los sistemas opera
 
 ---
 
+# 💻 Punto 2 – Instalación y uso de QEMU
+
+## 🧠 ¿Qué es QEMU?
+
+**QEMU (Quick EMUlator)** es un software libre que permite **emular y virtualizar sistemas operativos**.  
+Funciona ejecutando máquinas virtuales que pueden correr distintos sistemas, como Debian, Fedora, Ubuntu, entre otros, dentro del mismo computador físico.
+
+- **Tipo de herramienta:** Emulador y virtualizador.  
+- **Compatibilidad:** Linux, Windows y macOS.  
+- **Usos comunes:**  
+  - Laboratorios virtuales de redes o sistemas operativos.  
+  - Pruebas de software sin alterar el sistema principal.  
+  - Simulación de arquitecturas diferentes (x86, ARM, RISC-V, etc.).
+
+---
+
+## ⚙️ Instalación de QEMU en Linux
+
+### 🔹 Paso 1: Actualizar el sistema
+Antes de instalar, es importante tener el sistema actualizado:
+```bash
+sudo apt update && sudo apt upgrade -y
+
+
+
+sudo apt install qemu qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
+
+
+qemu-system-x86_64 --version
+
+qemu-img create -f qcow2 mi_disco.qcow2 10G
+
+
+qemu-system-x86_64 -hda mi_disco.qcow2 -cdrom debian.iso -boot d -m 2048
+
 
 
