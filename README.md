@@ -144,5 +144,13 @@ Antes de instalar, es importante tener el sistema actualizado:
 -qemu-system-x86_64 -hda mi_disco.qcow2 -cdrom debian.iso -boot d -m 2048
 ![Pantallazo 4](./fotos/pantallazo4.png)
 
+# 🧩 Punto 3 – Análisis de red con Nmap
+
+## 🧠 ¿Qué es Nmap?
+
+**Nmap (Network Mapper)** es una herramienta de código abierto utilizada para **explorar redes y auditar su seguridad**.  
+Permite identificar equipos conectados a una red, los **puertos abiertos**, **servicios activos**, **versiones de software** y hasta el **sistema operativo** de los hosts detectados.
+
+---
 
 
