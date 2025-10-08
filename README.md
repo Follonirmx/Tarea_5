@@ -152,5 +152,5 @@ Antes de instalar, es importante tener el sistema actualizado:
 Permite identificar equipos conectados a una red, los **puertos abiertos**, **servicios activos**, **versiones de software** y hasta el **sistema operativo** de los hosts detectados.
 
 ---
-
+![Pantallazo_5](./fotos/Fotonmap.png)
 
